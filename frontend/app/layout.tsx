@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    // <ClerkProvider>
       <html lang="en">
         <head>
           <meta charSet="UTF-8" />
@@ -32,7 +32,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-       <header className="flex items-center justify-between p-4 bg-neutral-800 shadow-md">
+       {/* <header className="flex items-center justify-between p-4 bg-neutral-800 shadow-md">
             <div className="flex gap-3 items-center">
               <SignedOut>
                 <div className="flex justify-end gap-2">
@@ -45,13 +45,13 @@ export default function RootLayout({
                 <UserButton />
               </SignedIn>
             </div>
-          </header>
-          <SignedIn>
+          </header> */}
+          {/* <SignedIn> */}
           {children}
-          </SignedIn>
+          {/* </SignedIn> */}
       </body>
     </html>
-    </ClerkProvider>
+    // </ClerkProvider>
 
   );
 }
